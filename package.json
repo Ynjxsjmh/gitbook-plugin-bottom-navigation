@@ -1,0 +1,18 @@
+{
+  "name": "gitbook-plugin-bottom-navigation",
+  "description": "Move default left and right side navigation to bottom",
+  "main": "index.js",
+  "version": "0.0.1",
+  "engines": {
+    "gitbook": ">=3.0.0"
+  },
+  "homepage": "https://github.com/Ynjxsjmh/gitbook-plugin-bottom-navigation",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ynjxsjmh/gitbook-plugin-bottom-navigation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ynjxsjmh/gitbook-plugin-bottom-navigation/issues"
+  },
+  "license": "GPL-3.0"
+}
