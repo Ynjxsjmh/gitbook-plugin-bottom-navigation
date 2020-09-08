@@ -1,7 +1,11 @@
 module.exports = function(book, page) {
   let navigation = ['<div class="navPagesContainer">'];
 
-  navigation.push('<div class="navPagesLinks">');
+  if (page.previous && page.previous.path && page.next && page.next.path) {
+    navigation.push('<div class="navPagesLinks">');
+  } else {
+    navigation.push('<div class="navPagesLink">');
+  }
 
   if (page.previous && page.previous.path) {
     navigation.push(`<a href="${page.previous.path}" class="cardPrevious">`);

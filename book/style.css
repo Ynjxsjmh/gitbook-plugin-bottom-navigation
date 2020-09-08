@@ -20,6 +20,19 @@
   grid-column-gap: 24px;
 }
 
+.navPagesLink {
+  width: auto;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "next"
+    "previous";
+  grid-template-columns: 1fr;
+  margin: 0px;
+  padding: 0px;
+  grid-column-gap: 24px;
+}
+
 .navPagesLinks:hover {
   color: rgb(135, 48, 119);
   border-color: rgb(135, 48, 119);
@@ -27,6 +40,17 @@
 }
 
 .navPagesLinks a:hover {
+  outline: 0;
+  text-decoration: none;
+}
+
+.navPagesLink:hover {
+  color: rgb(135, 48, 119);
+  border-color: rgb(135, 48, 119);
+  cursor:pointer;
+}
+
+.navPagesLink a:hover {
   outline: 0;
   text-decoration: none;
 }
