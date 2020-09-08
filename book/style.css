@@ -1,0 +1,131 @@
+.navigation {
+  display: none;
+}
+
+.navPagesContainer {
+  margin: 0;
+  display: block;
+  padding: 0;
+  margin-top: 64px;
+}
+
+.navPagesLinks {
+  width: auto;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas: "previous next";
+  grid-template-columns: 1fr 1fr;
+  margin: 0px;
+  padding: 0px;
+  grid-column-gap: 24px;
+}
+
+.navPagesLinks:hover {
+  color: rgb(135, 48, 119);
+  border-color: rgb(135, 48, 119);
+  cursor:pointer;
+}
+
+.navPagesLinks a:hover {
+  outline: 0;
+  text-decoration: none;
+}
+
+.cardPrevious {
+  color: rgb(36, 42, 49);
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  box-shadow: rgba(116, 129, 141, 0.1) 0px 3px 8px 0px;
+  align-items: center;
+  justify-self: stretch;
+  flex-direction: row;
+  background-color: rgb(255, 255, 255);
+  -webkit-box-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(230, 236, 241);
+  border-image: initial;
+  margin: 0px;
+  padding: 0px;
+  grid-area: previous / previous / previous / previous;
+  border-radius: 3px;
+  text-decoration: none;
+  page-break-inside: avoid;
+  transition: border 250ms ease 0s;
+}
+
+.cardNext {
+  color: rgb(36, 42, 49);
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  box-shadow: rgba(116, 129, 141, 0.1) 0px 3px 8px 0px;
+  align-items: center;
+  justify-self: stretch;
+  flex-direction: row;
+  background-color: rgb(255, 255, 255);
+  -webkit-box-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(230, 236, 241);
+  border-image: initial;
+  margin: 0px;
+  padding: 0px;
+  grid-area: next / next / next / next;
+  border-radius: 3px;
+  text-decoration: none;
+  page-break-inside: avoid;
+  transition: border 250ms ease 0s;
+}
+
+.cardIcon {
+  color: rgb(157, 170, 182);
+  display: block;
+  font-size: 24px;
+  flex: 0 0 auto;
+  margin: 0px;
+  padding: 16px;
+  transition: color 250ms ease 0s;
+}
+
+.cardIcon:first-child {
+  padding-right: 0px;
+}
+
+.cardIcon:last-child {
+  padding-left: 0px;
+}
+
+.cardPreviousBody {
+  display: block;
+  text-align: right;
+  flex: 1 1 0%;
+  margin: 0px;
+  padding: 16px;
+}
+
+.cardNextBody {
+  display: block;
+  flex: 1 1 0%;
+  margin: 0px;
+  padding: 16px;
+}
+
+.cardHint {
+  color: rgb(157, 170, 182);
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+
+.cardTitle {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  transition: color 250ms ease 0s;
+}
