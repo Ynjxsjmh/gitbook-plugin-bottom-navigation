@@ -33,21 +33,9 @@
   grid-column-gap: 24px;
 }
 
-.navPagesLinks:hover {
-  color: rgb(135, 48, 119);
-  border-color: rgb(135, 48, 119);
-  cursor:pointer;
-}
-
 .navPagesLinks a:hover {
   outline: 0;
   text-decoration: none;
-}
-
-.navPagesLink:hover {
-  color: rgb(135, 48, 119);
-  border-color: rgb(135, 48, 119);
-  cursor:pointer;
 }
 
 .navPagesLink a:hover {

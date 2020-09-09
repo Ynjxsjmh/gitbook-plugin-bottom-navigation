@@ -4,6 +4,9 @@ module.exports = {
   // Extend book resources and html
   book: {
     assets: "./book",
+    js: [
+      "stylish.js"
+    ],
     css: [
       "style.css"
     ],
