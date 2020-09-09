@@ -1,4 +1,6 @@
 
+![](./doc/images/20200909_164504_utDQ2T.png)
+
 Make sure `bottom-navigation` is defined before any footer plugin.
 
 ```json
