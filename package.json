@@ -16,6 +16,16 @@
   },
   "gitbook": {
     "properties": {
+      "navPrevSelector": {
+        "default": null,
+        "description": "Default previous navigation selector to get href.",
+        "type": "string"
+      },
+      "navNextSelector": {
+        "default": null,
+        "description": "Default next navigation selector to get href.",
+        "type": "string"
+      },
       "iconColor": {
         "default": null,
         "description": "Icon color to show when hovered.",
