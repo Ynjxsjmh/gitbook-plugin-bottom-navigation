@@ -5,7 +5,7 @@ module.exports = {
   book: {
     assets: "./book",
     js: [
-      "stylish.js"
+      "stylish.js", "href.js"
     ],
     css: [
       "style.css"

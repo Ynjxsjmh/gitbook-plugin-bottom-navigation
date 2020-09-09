@@ -8,7 +8,7 @@ module.exports = function(book, page) {
   }
 
   if (page.previous && page.previous.path) {
-    navigation.push(`<a href="${page.previous.path}" class="card cardPrevious">`);
+    navigation.push(`<a class="card cardPrevious">`);
     navigation.push('  <div class="cardIcon">');
     navigation.push('    <i class="fa fa-angle-left"></i>');
     navigation.push('  </div>');
@@ -24,7 +24,7 @@ module.exports = function(book, page) {
   }
 
   if (page.next && page.next.path) {
-    navigation.push(`<a href="${page.next.path}" class="card cardNext">`);
+    navigation.push(`<a class="card cardNext">`);
     navigation.push('  <div class="cardNextBody">');
     navigation.push('    <div class="cardHint">');
     navigation.push('      <span>Next</span>');
