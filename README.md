@@ -27,3 +27,5 @@ You can also customize the hovered color with following properties:
 ```
 
 Notice `borderColor` has the toppest priority which means if `iconColor` or `titleColor` is not defined, it will be the same color with `borderColor`.
+
+If you think default width of `page-inner` is too narrow, you can change it with `pageInnerWidth` property like `"pageInnerWidth": "80%"`.
