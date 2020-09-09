@@ -24,7 +24,7 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
         stylish(card, main);
 
         for (const sub of subs) {
-          $(`.${sub}`).each((ii, s) => stylish(s, {color}));
+          $(card).find(`.${sub}`).each((ii, s) => stylish(s, {color}));
         }
       });
 
@@ -32,7 +32,7 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
         unstylish(card, main);
 
         for (const sub of subs) {
-          $(`.${sub}`).each((ii, s) => unstylish(s, {color}));
+          $(card).find(`.${sub}`).each((ii, s) => unstylish(s, {color}));
         }
       });
     });
