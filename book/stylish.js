@@ -19,24 +19,22 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
     const main = {color, borderColor: `${color}`, cursor: "pointer"};
     const subs = ['cardIcon', 'cardTitle'];
 
-    Array.from(document.getElementsByClassName('card')).forEach(element => {
-      element.addEventListener('mouseover', function () {
-        stylish(element, main);
+    $(".card").each(function () {
+      var card = this;
+
+      card.addEventListener('mouseover', function () {
+        stylish(card, main);
 
         for (const sub of subs) {
-          Array.from(document.getElementsByClassName(sub)).forEach(e => {
-            stylish(e, {color});
-          });
+          $(`.${sub}`).each(() => stylish(this, {color}));
         }
       });
 
-      element.addEventListener('mouseout', function () {
-        unstylish(element, main);
+      card.addEventListener('mouseout', function () {
+        unstylish(card, main);
 
         for (const sub of subs) {
-          Array.from(document.getElementsByClassName(sub)).forEach(e => {
-            unstylish(e, {color});
-          });
+          $(`.${sub}`).each(() => unstylish(this, {color}));
         }
       });
     });
