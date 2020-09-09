@@ -15,20 +15,25 @@
     "url": "https://github.com/Ynjxsjmh/gitbook-plugin-bottom-navigation/issues"
   },
   "gitbook": {
-    "iconColor": {
-      "default": null,
-      "description": "Icon color to show when hovered.",
-      "type": "string"
-    },
-    "titleColor": {
-      "default": null,
-      "description": "Title color to show when hovered.",
-      "type": "string"
-    },
     "properties": {
+      "iconColor": {
+        "default": null,
+        "description": "Icon color to show when hovered.",
+        "type": "string"
+      },
+      "titleColor": {
+        "default": null,
+        "description": "Title color to show when hovered.",
+        "type": "string"
+      },
       "borderColor": {
         "default": "#873077",
         "description": "Border color to show when hovered.",
+        "type": "string"
+      },
+      "pageInnerWidth": {
+        "default": null,
+        "description": "Page inner width.",
         "type": "string"
       }
     }

@@ -21,6 +21,10 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
     const main = {color, borderColor: `${color}`, cursor: "pointer"};
     const subs = ['cardIcon', 'cardTitle'];
 
+    if (config.pageInnerWidth) {
+      $('.page-inner').attr(`style', 'width: ${config.pageInnerWidth} !important`);
+    }
+
     $(".card").each(function (i, card) {
       card.addEventListener('mouseover', function () {
         stylish(card, main);
