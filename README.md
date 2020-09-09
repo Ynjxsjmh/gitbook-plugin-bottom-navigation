@@ -10,15 +10,18 @@ Make sure `bottom-navigation` is defined before any footer plugin.
 }
 ```
 
-You can also customize the border color with `color` property.
+You can also customize the hovered color with following properties:
 
 ```json
 {
   "pluginsConfig": {
     "bottom-navigation": {
-      "color": "#3884FE"
+      "iconColor": null,
+      "titleColor": null,
+      "borderColor": "#3884FE"
     }
   }
 }
 ```
 
+Notice `borderColor` has the toppest priority which means if `iconColor` or `titleColor` is not defined, it will be the same color with `borderColor`.
