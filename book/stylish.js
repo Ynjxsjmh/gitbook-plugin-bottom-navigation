@@ -15,7 +15,9 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
   gitbook.events.bind("page.change", function(event) {
     const config = gitbook.state.config.pluginsConfig["bottom-navigation"];
 
-    const color = config.color;
+    const color = config.borderColor;
+    const iconColor = config.iconColor || color;
+    const titleColor = config.titleColor || color;
     const main = {color, borderColor: `${color}`, cursor: "pointer"};
     const subs = ['cardIcon', 'cardTitle'];
 
@@ -23,9 +25,8 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
       card.addEventListener('mouseover', function () {
         stylish(card, main);
 
-        for (const sub of subs) {
-          $(card).find(`.${sub}`).each((ii, s) => stylish(s, {color}));
-        }
+        $(card).find('.cardIcon').each((ii, s) => stylish(s, {color: iconColor}));
+        $(card).find('.cardTitle').each((ii, s) => stylish(s, {color: titleColor}));
       });
 
       card.addEventListener('mouseout', function () {
