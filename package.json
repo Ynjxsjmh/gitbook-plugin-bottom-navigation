@@ -2,7 +2,7 @@
   "name": "gitbook-plugin-bottom-navigation",
   "description": "Move default left and right side navigation to bottom",
   "main": "index.js",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "engines": {
     "gitbook": ">=3.0.0"
   },
@@ -38,5 +38,11 @@
       }
     }
   },
+  "keywords": [
+    "gitbook",
+    "plugin",
+    "navigation",
+    "pagination"
+  ],
   "license": "GPL-3.0"
 }
