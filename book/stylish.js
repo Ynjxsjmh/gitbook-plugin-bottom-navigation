@@ -19,14 +19,12 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
     const main = {color, borderColor: `${color}`, cursor: "pointer"};
     const subs = ['cardIcon', 'cardTitle'];
 
-    $(".card").each(function () {
-      var card = this;
-
+    $(".card").each(function (i, card) {
       card.addEventListener('mouseover', function () {
         stylish(card, main);
 
         for (const sub of subs) {
-          $(`.${sub}`).each(() => stylish(this, {color}));
+          $(`.${sub}`).each((ii, s) => stylish(s, {color}));
         }
       });
 
@@ -34,7 +32,7 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
         unstylish(card, main);
 
         for (const sub of subs) {
-          $(`.${sub}`).each(() => unstylish(this, {color}));
+          $(`.${sub}`).each((ii, s) => unstylish(s, {color}));
         }
       });
     });
