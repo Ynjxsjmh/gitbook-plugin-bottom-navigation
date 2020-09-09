@@ -43,7 +43,7 @@
   text-decoration: none;
 }
 
-.cardPrevious {
+.card {
   color: rgb(36, 42, 49);
   display: flex;
   position: relative;
@@ -62,37 +62,18 @@
   border-image: initial;
   margin: 0px;
   padding: 0px;
-  grid-area: previous / previous / previous / previous;
   border-radius: 3px;
   text-decoration: none;
   page-break-inside: avoid;
   transition: border 250ms ease 0s;
 }
 
+.cardPrevious {
+  grid-area: previous / previous / previous / previous;
+}
+
 .cardNext {
-  color: rgb(36, 42, 49);
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  box-shadow: rgba(116, 129, 141, 0.1) 0px 3px 8px 0px;
-  align-items: center;
-  justify-self: stretch;
-  flex-direction: row;
-  background-color: rgb(255, 255, 255);
-  -webkit-box-align: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgb(230, 236, 241);
-  border-image: initial;
-  margin: 0px;
-  padding: 0px;
   grid-area: next / next / next / next;
-  border-radius: 3px;
-  text-decoration: none;
-  page-break-inside: avoid;
-  transition: border 250ms ease 0s;
 }
 
 .cardIcon {
