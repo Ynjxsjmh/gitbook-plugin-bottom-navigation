@@ -14,5 +14,15 @@
   "bugs": {
     "url": "https://github.com/Ynjxsjmh/gitbook-plugin-bottom-navigation/issues"
   },
+  "gitbook": {
+    "properties": {
+      "color": {
+        "default": "#873077",
+        "description": "Color to show when hovered.",
+        "title": "color",
+        "type": "string"
+      }
+    }
+  },
   "license": "GPL-3.0"
 }

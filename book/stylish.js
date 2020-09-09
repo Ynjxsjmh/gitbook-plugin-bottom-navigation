@@ -11,11 +11,13 @@ function unstylish(element, style) {
 };
 
 require(["gitbook", "jQuery"], function(gitbook, $) {
-  const color = "#873077";
-  const main = {color, borderColor: `${color}`, cursor: "pointer"};
-  const subs = ['cardIcon', 'cardTitle'];
 
-  gitbook.events.bind("page.change", function() {
+  gitbook.events.bind("page.change", function(event) {
+    const config = gitbook.state.config.pluginsConfig["bottom-navigation"];
+
+    const color = config.color;
+    const main = {color, borderColor: `${color}`, cursor: "pointer"};
+    const subs = ['cardIcon', 'cardTitle'];
 
     Array.from(document.getElementsByClassName('card')).forEach(element => {
       element.addEventListener('mouseover', function () {
