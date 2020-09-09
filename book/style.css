@@ -129,6 +129,7 @@
 }
 
 .cardHint {
+  font-size: .8em;
   color: rgb(157, 170, 182);
   display: block;
   margin: 0px;
@@ -136,6 +137,7 @@
 }
 
 .cardTitle {
+  font-size: 1em;
   display: block;
   margin: 0px;
   padding: 0px;
