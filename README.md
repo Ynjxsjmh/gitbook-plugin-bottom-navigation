@@ -36,32 +36,32 @@ The path attribute in `page` object is not parsed to html. I get the parsed path
 
 ```json
 {
-  title: '',
-  level: '',
-  depth: ,
-  next: {
-    title: '',
-    level: '',
-    depth: ,
-    anchor: undefined,
-    url: undefined,
-    path: 'xxx.md',
-    ref: 'xxx.md',
-    articles: []
+  "title":"",
+  "level":"",
+  "depth":"",
+  "next":{
+    "title":"",
+    "level":"",
+    "depth":"",
+    "anchor":"undefined",
+    "url":"undefined",
+    "path":"xxx.md",
+    "ref":"xxx.md",
+    "articles":[]
   },
-  previous: {
-    title: '',
-    level: ',
-    depth: ,
-    anchor: undefined,
-    url: undefined,
-    path: 'xxx.md',
-    ref: 'xxx.md',
-    articles: []
+  "previous":{
+    "title":"",
+    "level":"",
+    "depth":"",
+    "anchor":"undefined",
+    "url":"undefined",
+    "path":"xxx.md",
+    "ref":"xxx.md",
+    "articles":[]
   },
-  content: '',
-  dir: 'ltr',
-  type: 'markdown',
-  path: 'xxx.md',
+  "content":"",
+  "dir":"ltr",
+  "type":"markdown",
+  "path":"xxx.md"
 }
 ```
