@@ -1,7 +1,7 @@
 
 ![](./doc/images/20200909_164504_utDQ2T.png)
 
-Make sure `bottom-navigation` is defined before any footer plugin.
+Make sure `bottom-navigation` is defined before any other footer plugin.
 
 ```json
 {
@@ -12,7 +12,7 @@ Make sure `bottom-navigation` is defined before any footer plugin.
 }
 ```
 
-You can also customize the hovered color with following properties:
+You can customize the hovered color with following properties:
 
 ```json
 {
@@ -26,7 +26,7 @@ You can also customize the hovered color with following properties:
 }
 ```
 
-Notice `borderColor` has the toppest priority which means if `iconColor` or `titleColor` is not defined, it will be the same color with `borderColor`.
+Note `borderColor` has the highest priority which means if `iconColor` or `titleColor` is not defined, it will be the same color with `borderColor`.
 
 If you think default width of `page-inner` is too narrow, you can change it with `pageInnerWidth` property like `"pageInnerWidth": "80%"`.
 
