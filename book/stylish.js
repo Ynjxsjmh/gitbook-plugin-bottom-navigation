@@ -41,6 +41,18 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
         }
       });
     });
+
+    const prevText = config.prevText;
+    const nextText = config.nextText;
+
+    if ($('.navPagesContainer .cardPrevious')) {
+      $('.navPagesContainer .cardPrevious .cardHint span').text(prevText);
+    }
+
+    if ($('.navPagesContainer .cardNext')) {
+      $('.navPagesContainer .cardNext .cardHint span').text(nextText);
+    }
+
   });
 
 });
