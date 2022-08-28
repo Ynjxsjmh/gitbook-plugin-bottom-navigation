@@ -1,7 +1,7 @@
 
 ![](./doc/images/20200909_164504_utDQ2T.png)
 
-Make sure `bottom-navigation` is defined before any other footer plugin.
+In your `book.json`, make sure `bottom-navigation` is defined before any other footer plugin.
 
 ```json
 {
@@ -12,7 +12,7 @@ Make sure `bottom-navigation` is defined before any other footer plugin.
 }
 ```
 
-You can customize the hovered color with following properties:
+You can customize the hovered color with following properties (all properties are listed in `packages.json`):
 
 ```json
 {
